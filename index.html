@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="css/Dashboard.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+	  <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/circle.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <!-- left menu section starts here -->
+	<div class="left-panel">
+        <div class="brand-logo">
+            <img alt="Pydroid" class="brand-logo-img" src="Icons/logo.svg"/>
+         </div>
+        <a href="profile.html" class="nav-link nav-profile"> <img class="nav-first" src="Icons/profile.png"><span class="tooltiptext t2">Hi Manishanker</span></a>
+		<a href="index.html" class="nav-link active-nav"> <img class="others" src="Icons\home.svg"><span class="tooltiptext t2">Homepage</span></a>
+		<a href="projects.html" class="nav-link"> <img class="others" src="Icons\project.svg"><span class="tooltiptext t3">projects</span></a>
+		<a href="assignments.html" class="nav-link"> <img class="others" src="Icons\assignment.svg"><span class="tooltiptext t4">Assignment</span></a>
+		<a href="schedual.html" class="nav-link"> <img class="others" src="Icons\schedule.svg"><span class="tooltiptext t5">Schedual</span></a>
+		<a href="report.html" class="nav-link"> <img class="others" src="Icons\summry.svg"><span class="tooltiptext t6">Report</span></a>
+	</div>
+    <!-- left menu section starts here -->
+    
+    
+    
+<!-- middle section starts here -->
+	<div class="mid-section">
+        <!-- top navbar section starts here -->
+        <div class="top-navbar card">
+       
+         <!-- logo division ends here -->
+         <div class="nav-inner-right">
+                <h3>Welcome to your online learning Assistant</h3>
+         </div>
+    </div>
+    <!-- top navbar section starts here -->
+        
+        <div class="left-mid">
+            
+            
+    <!-- modal section starts here -->
+            
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <a href="#"><span class="close">&times;</span></a>
+     <p class="lecture-heading">Topic 2 Python Scripts Using Game Activities</p>
+      
+      <!-- tabs starts here -->
+
+<div class="tab">
+  <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'notes')">Notes</button>
+  <button class="tablinks" onclick="openCity(event, 'resources')">Resources Links</button>
+</div>
+
+<div id="notes" class="tabcontent">
+   <p class="underprocess">Under process need to discuss the implemantation</p>
+</div>
+
+<div id="resources" class="tabcontent">
+    <div class="resources-content">
+        <a target="_blank" href="https://www.w3schools.com/w3css/w3css_tabulators.asp" class="resource-link">
+            <h3 class="link-heading">Link heading 1</h3>
+            <p class="link-content">https://www.w3schools.com/w3css/w3css_tabulators.asp</p>
+    </a>
+        <a target="_blank" href="https://www.w3schools.com/w3css/w3css_tabulators.asp" class="resource-link">
+            <h3 class="link-heading">Link heading 1</h3>
+            <p class="link-content">https://www.w3schools.com/w3css/w3css_tabulators.asp</p>
+    </a>
+        <a target="_blank" href="https://www.w3schools.com/w3css/w3css_tabulators.asp" class="resource-link">
+            <h3 class="link-heading">Link heading 1</h3>
+            <p class="link-content">https://www.w3schools.com/w3css/w3css_tabulators.asp</p>
+    </a>
+    </div>
+</div>
+      <!-- tabs ends here -->
+      
+           </div>
+  </div>
+
+
+            <!-- modal section ends here -->
+            <h3 class="direct-head">Summary</h3>
+                <div class="class-structure card">
+                    <div class="summry-content">
+                        <div id="donutchart" class="summary-chart"></div>
+                        <div id="donutchart2" class="summary-chart"></div>
+                        <div id="donutchart3" class="summary-chart"></div>
+                        <p>20 Classes</p>
+                        <p>2 Projects</p>
+                        <p>12 Assignments</p>
+                    </div>
+                    <a class="report-button" href="report.html">
+                     View full Report
+                    </a>
+                </div>
+            
+            
+            <h3 class="direct-head">Delivered Lectures</h3>
+            
+	   <div class="class-structure card">
+            
+           <a id="structure-list" class="structure-list" href="#myModal">
+                <p class="attand-mark present">P</p>
+               <p class="date">07-04-2017</p>
+               <p class="topic-name">Topic 10 : The Law of small Numbers</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a href="#myModal" class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">06-04-2017</p>
+               <p class="topic-name">Topic 9 : Answering an Eaiser Question</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a href="#myModal" class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">05-04-2017</p>
+               <p class="topic-name">Topic 8 : How Judgments Happen</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a href="#myModal" class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">03-04-2017</p>
+               <p class="topic-name">Topic 7 : A Machine Jumping to Conclusions</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a href="#myModal" class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">02-04-2017</p>
+               <p class="topic-name">Topic 6 : Norms, Surprises. and Causes</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a href="#myModal" class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">29-03-2017</p>
+               <p class="topic-name">Topic 5 : Cognitive Ease</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a href="#myModal" class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">28-03-2017</p>
+               <p class="topic-name">Topic 4 : The Associative Machine</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a href="#myModal" class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">27-03-2017</p>
+               <p class="topic-name">Topic 3 : The Lazy Controller</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">26-03-2017</p>
+               <p class="topic-name">Topic 2 : Attention and Effort</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+           <a href="#myModal" class="structure-list">
+                <p class="attand-mark present">P</p>
+               <p class="date">25-03-2017</p>
+               <p class="topic-name">Topic 1 : The Characters of the Story</p>
+               <p class="button-secrate">Click here for more</p>
+           </a>
+           <!-- classs structure list ends here -->
+        </div>
+        </div>
+        <div class="right-mid">
+     
+            <h3 class="direct-head">Upcoming</h3>
+            <a href="schedual.html">
+            <div class="tab">
+                <div class="project-list-iteam">
+                    <h4>Topic 11 : Anchors</h4>
+                    <p class="status">24 March,2018</p>
+                </div>
+                <div class="project-list-iteam">
+                    <h4>Topic 12 : The science of Avaliablity</h4>
+                    <p class="status">25 March,2018</p>
+                </div>
+                <div class="project-list-iteam">
+                    <h4>Topic 13: Availability, Emotion, and Risk</h4>
+                    <p class="status">27 March,2018</p>
+                </div>
+                <div class="project-list-iteam">
+                    <h4>Topic 14 : Tom W’s Specialty</h4>
+                    <p class="status">28 March,2018</p>
+                </div>
+                <div class="project-list-iteam">
+                    <h4>Topic 15 : Linda: Less is More</h4>
+                    <p class="status">30 March,2018</p>
+                </div>
+            </div></a>
+            
+            
+            <h3 class="direct-head">Active Assignments</h3>
+            <a href="assignments.html">
+            <div class="tab">
+                <div class="project-list-iteam">
+                    <h4>Kaleidoscope name design...great for the beginning of the year</h4>
+                    <p class="status"><span class="status-indicator open"></span> 24 mar - 28 mar</p>
+                </div>
+                <div class="project-list-iteam">
+                    <h4>Assignment Heading</h4>
+                    <p class="status"><span class="status-indicator open"></span> 24 mar - 28 mar</p>
+                </div>
+                <div class="project-list-iteam">
+                    <h4>Assignment Heading</h4>
+                    <p class="status"><span class="status-indicator late"></span> 20 mar - 22 mar</p>
+                </div>
+                <div class="project-list-iteam">
+                    <h4>Assignment Heading</h4>
+                    <p class="status"><span class="status-indicator late"></span> 17 mar - 20 mar</p>
+                </div>
+            </div>
+            </a>
+
+        </div>
+
+
+        </div>
+<!-- middle section ends here -->
+    <script src="https://use.fontawesome.com/1bd21ecc06.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

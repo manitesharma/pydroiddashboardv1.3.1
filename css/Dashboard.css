@@ -1,0 +1,1318 @@
+body{
+	font-family:roboto;
+	background-color: #e9ebee;
+    margin: 0px;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    background-color: #262b3f;
+}
+
+body::-webkit-scrollbar
+{
+	transition: all 200ms;
+    width: 5px;
+    background-color: #0000ff;
+}
+
+body::-webkit-scrollbar-thumb
+{
+    border-radius: 200px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #fff;
+}
+.left-panel{
+    position: fixed;
+	float: left;
+	width: 14%;
+    margin: 0%;
+    z-index: 9;
+	left: 0%;
+	top: 0%;
+    background: #4a5781;
+    color: #fff;
+    padding:0%;
+	height: 100vh;
+    overflow-x: hidden;
+}
+.mid-section{
+ float: left;
+    width: 86%;
+    padding: 0%;
+    margin: 0% 0% 0% 14%;
+    font-size: 0.85em;
+}
+.left-mid{
+    float: left;
+    margin: 0% 2% 0%;
+    width: 64%;
+}
+.right-mid{
+    float: left;
+    margin: 0% 2% 0% 0%;
+    width: 30%;
+}
+.nav-link{
+    float: left;
+    width: 75%;
+    padding: 1em 5% 1em 20%;
+    margin: 0%;
+    border-radius: 0px;
+    font-size: 0.85em;
+}
+.nav-link:hover{
+    transition: all 200ms;
+	background-color:#5f6b9140;
+}
+.others{
+	width: 1.5em;
+	padding: 0 1em 0em 0em;
+	float: left;
+    display: none;
+
+}
+.active-nav{
+    background-color:#5f6b91;
+    border-left: 5px solid #fff;
+}
+.nav-link .tooltiptext {
+    text-align: left;
+	float: left;
+    padding: 0.25em 0em;
+	transition: all 250ms;
+	opacity: 1;
+    /* Position the tooltip */
+    z-index: 1;
+    color: #fff;
+}
+
+.nav-first{
+    float: left;
+    width: 15%;
+    margin-right: 1em;
+    display: block;
+	margin-top: 0%;
+    border-radius: 200px;
+}
+.nav-profile{
+    width:90%; 
+    padding: 1em 5% 1em 5%; 
+}
+
+/* css for top navbar starts here */
+.top-navbar{
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    top: 0%;
+    left: 0%;
+    box-shadow: 0em 0em 1em #00000040;
+    padding: 1em 0%;
+    z-index: 999999999;
+}
+.nav-inner-right{
+    float: left;
+    width: 90%;
+    padding: 0% 5%;
+}
+.nav-inner-right > h3{
+    float: left;
+    width: 100%;
+    font-weight: 300;
+    margin: 0.5em;
+    font-size: 1.5em;
+}
+.brand-logo{
+    float: left;
+    width: 100%;
+    margin: 0% 0% 10%;
+}
+.brand-logo-img{
+    float: left;
+    width: 90%;
+    padding:8% 5%;
+}
+
+.profile-button{
+    float: right;
+    height: 100%;
+    max-width: 40%;
+    margin-right: 4em;
+    padding: 0em 1em;
+    border-radius: 50px;
+    z-index: 3;
+}
+.profile-button:hover{
+    transition: all 250ms;
+    background-color: #0000ff00;
+    cursor: pointer;
+}
+.profile-name{
+    float: left;
+    font-weight: 400;
+    padding: 0em 0.5em;
+}
+.profile-img{
+    float: left;
+    height: 70%;
+    margin: 5% 0.5em 3% 0%;
+    border-radius: 30px;
+}
+
+.profile-button .profile-dropdown {
+    visibility: hidden;
+    background-color: #fff;
+    color: #FFF;
+    text-align: center;
+    border-radius: 0px;
+	font-size: 1em;
+    padding:0em 0em;
+	float:right;
+	margin-top: 2%;
+	margin-left:0%;
+	transition: all 250ms;
+	opacity: 1;
+    /* Position the tooltip */
+    position: relative;
+   z-index: 9999;
+    width: 100%;
+    transition-delay: 700ms;
+}
+
+.profile-button:hover .profile-dropdown {
+/*	  transition-delay: 4s;
+	  transition: all 250ms;*/
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 0em 0.5em 0.7em #00000040;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-delay: 100ms;
+    
+}
+.dropdown-links{
+    float: left;
+    width: 80%;
+    padding: 1em 10%;
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    border-top: 1px solid #00000020;
+}
+.dropdown-links > .fa{
+    margin-right: 1em;
+}
+.dropdown-links:hover{
+    background-color: #28a6ff;
+}
+/* css for top navbar ends here */
+
+/* Css for the right-panel*/
+
+
+.head{
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	padding: 1em 1em;
+	margin:0em;
+	font-weight: 400;
+	font-size: 0.9em;
+	float: left;
+
+}
+.notification-card{
+	width: 100%;
+	margin: 0%;
+	padding: 4% 0%;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	float: left;
+
+}
+.notification-card:hover{
+	transition: all 250ms;
+	background-color: rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+.notification-head{
+	width: 90%;
+	padding: 0em 1em;
+	margin: 0.3em 0em;
+	font-size: 0.8em;
+	font-weight: 300;
+	float: left;
+	line-height: 1.5em;
+	text-align: justify-all;
+}
+
+.notification-timestamp{
+	width: 100%;
+	padding: 0em 1em;
+	margin: 0em 0em;
+	font-size: 0.7em;
+	font-weight: 300;
+	float: left;
+	opacity: 0.4;
+}
+/* css for middle section goes here*/
+
+.class-structure{
+    float: left;
+    width: 100%;
+    padding: 0% 0%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0.5% 0%;
+    box-shadow: 0em 0em 0.5em #00000030;
+}
+.structure-list{
+    float: left;
+    width: 96%;
+    padding: 0% 2%;
+    border-bottom: 1px solid #00000020;
+}
+.structure-list:nth-last-child(1){
+    float: left;
+    border-bottom: 0px solid #00000020;
+}
+.structure-list:hover{
+    background-color: #4a578150;
+    cursor: pointer;
+    border-radius: 0px;
+}
+.attand-mark{
+    float: left;
+    background-color: #4a578120;
+    padding: 0.5em 1em;
+    border-radius: 5px
+    
+}
+.test-mark{
+    background-color: #ffa549;
+}
+.visited{
+    background-color: #cfd5df;
+}
+.date{
+    float: left;
+    padding: 0.5em 1.5em;
+}
+.topic-name{
+    float: left;
+    padding: 0.5em 1em;
+}
+.button-secrate{
+    float: right;
+    padding: 0.5em 0em;
+    color: #fff;
+}
+.notice-list{
+    float: left;
+    width: 100%;
+    padding: 0% 0%;
+    margin: 1% 0%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0em 0em 0.5em #00000040;
+}
+.notice-list:hover{
+    transition: all 150ms;
+    cursor: pointer;
+}
+.direct-head{
+    float: left;
+    position: relative;
+    top: 34%;
+    bottom: -20%;
+    left: -0.5em;
+    border-radius: 2px;
+    /* width: 94%; */
+    margin: 2em 0em -0.5em;
+    padding: 0.5em 3%;
+    font-weight: 400;
+    font-size: 1em;
+    color: #ffffffed;
+    background-color: #627eda;
+}
+.notice{
+    float: left;
+    width: 100%;
+    padding: 0em 0%;
+    border-bottom: 1px solid #e9ebee;
+    line-height: 1.5;
+    margin: 0em 0em;
+    display: flex;
+}
+.notice:hover{
+    background-color: #28a6ff;
+
+}
+.notices:nth-child(1) > .notice-list > .notice:hover{
+    background-color: transparent;
+    cursor: auto;
+
+}
+.notice > .notice-time {
+    padding: 1em 1% 1em 2%;
+    border-radius: 0px;
+    font-weight: 400;
+    background-color: #ddd4;
+    float: left;
+    width: 40%;
+}
+.notice > .notice-time::before { 
+    content: "\f017";
+    font-family: FontAwesome;
+    margin-right: 0.5em;
+}
+.notice > .notice-disc{
+    float: left;
+    width: 53%;
+    padding: 1em 2%;
+}
+/*progress bar css goes here */
+.project-card{
+    padding: 0em 5%;
+    width: 90%;
+}
+.project-card:hover{
+    transition: all 150ms;
+    background-color: #28a6ff;
+    box-shadow: 0px 12px 12px -6px #0002;
+}
+a{
+    color: #000;
+}
+.project-heading{
+    float: left;
+    width: 100%;
+    font-weight: 400;
+    margin: 1em 0em 2em;
+}
+.progress-deadline{
+    float: left;
+    width: 100%;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+}
+.barend{
+    float: left;
+    background-color: #7dadfd;
+    width: 20%;
+    padding: 0.5em 0em;
+    margin: 0em;
+    text-align: center;
+    color: #3d3d3d;
+}
+.left-corner{
+   border-radius: 20px; 
+}
+.right-corner{
+   border-radius: 20px; 
+}
+.progress-empty{
+    float: left;
+    width: 60%;
+    margin: 2.7em -1% 1.5em -1%;
+    font-size:4px;
+    background-color: #00000020;
+}
+.progress-status{
+    transition: all 600ms;
+    float: left;
+    text-align: right;
+    width: 50%;
+    padding: 0.2em 4% 0.2em 0%;
+    margin: 0em;
+    background-color: #7dadfd;
+    color: #fff0;
+    border-radius: 20px;
+}
+.critical{
+    background-color: #ff8e4f;
+}
+.inactive-bar{
+    background-color: #c1c1c1;
+}
+/* css for middle section goes here*/
+/* Css for Project page */
+.project-link-input-box{
+	width: 100%;
+	float: left;
+
+}
+
+.link-data{
+	float: left;
+	width: 80%;
+	margin: 1% 10%;
+
+}
+.inputs{
+	padding: 1%;
+}
+.project-input-field{
+	float: left;
+	width: 75%;
+	border: 0px solid #fff;
+	background-color: #e9ebee;
+}
+.project-input-field:focus{
+    transition: all 200ms;
+    background-color: #FFF;
+    outline: -webkit-focus-ring-color auto 0px;
+}
+.complete-link{
+	background-color: transparent;
+	color: #7dadfd;
+	text-decoration: none;
+}
+.complete{
+	color: #7dadfd;
+}
+.submit-button{
+	float: left;
+	width: 22%;
+	text-align: center;
+	border: 0px solid #fff;
+	background-color: #7dadfd;
+    color: #ffffff;
+    font-weight: 600;
+
+}
+.submit-button:hover{
+	transition: all 250ms;
+	transform: scale(1);
+	box-shadow: 0em 0.7em 1.5em rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.instructor-review{
+	width: 90%;
+	margin: 0% 5%;
+	float: left;
+	border-top: 1px solid #FFF;
+}
+
+.review-head{
+	float: left;
+	width: 98%;
+	margin:2% 1% 0.5em;
+	font-weight: 500;
+	
+}
+.mentor-review{
+	float: left;
+	width: 94%;
+	margin: 0%;
+	padding: 0% 3% 2%;
+	line-height: 1.5em;
+	font-weight: 400;
+	font-size: 0.85em;
+	opacity: 0.8;
+	text-align: justify;
+}
+.review-sec{
+	float: left;
+	width: 100%;
+}
+.close-sec{
+	transition: all 250ms;
+	overflow-y: hidden;
+	height: 0px;
+}
+
+/* navbar panel css */
+.navbar-panel{
+	float: left;
+	top: 2%;
+	left: 6.5%;
+	z-index: -10;
+	background-color: #fff;
+	border-radius: 3px;
+	position: absolute;
+	padding: 0.5em;
+}
+.navbar-guide{
+	float: left;
+	margin: 0%;
+	text-decoration: none;
+	color: #000;
+	padding: 0.5em 1em;
+	border-radius: 3px;
+}
+.navbar-guide:hover{
+	transition: all 250ms;
+	background-color:#FFF;
+}
+.card-button{
+	margin: 1em;
+	float: right;
+	padding: 0.7em 2em;
+	text-align: right;
+	border-radius: 3px;
+}
+.card-button:hover{
+	background-color: #e9ebee;
+	cursor: pointer;
+}
+.hidden{
+	display: none;
+}
+
+/*Css for schedule*/
+
+.schedule-card{
+	width: 32%;
+	float: left;
+	background-color: #fff;
+	margin-left: 0%;
+    border-radius: 3px;
+    
+
+}
+
+.schedule-info{
+	width: 25%;
+	float: left;
+	margin: 0%;
+
+}
+
+.schedule-head{
+	float: left;
+	width: 92%;
+	margin: 1% 0%;
+	padding:4%;
+	font-size:1em;
+	color: #000;
+	font-weight: 500;
+	text-decoration: none;
+    height: 1.2em;
+    overflow-x: hidden;
+
+}
+.schedule-date{
+	float: left;
+	width: 100%;
+	font-size: .8em;
+	font-weight: 400;
+	padding: 0em 2em;
+    margin: 0%;
+    color: #1e2333;
+    opacity: 0.7;
+}
+
+.schedule-time{
+	float: left;
+	width: 92%;
+	font-size: 1em;
+	font-weight: 500;
+	padding: 0em 4%;
+    text-align: right;
+	margin:1em 0em;
+    color: #1e2333;
+    opacity: 0.7;
+}
+
+.multiple-schedule-cards{
+	float: left;
+	margin: 0.5%;
+}
+
+#special-color-card{
+	background-color: rgba(234,39,39,0.5);
+}
+
+.schedule-card:hover{
+	transform: scale(1.01);
+	transition: all 200ms;
+    box-shadow: 0em 0.2em 1.5em rgba(0,0,0,0.3);
+}
+
+/* modal css startes here */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal:target {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #f6f6f6;
+    margin: 5% auto 0%; /* 15% from the top and centered */
+    padding: 0%;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+    height: 85%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 5px;
+    transform: scale(0.7);
+    opacity: 0.3;
+    animation-name: modalanim;
+    animation-duration: 300ms;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes modalanim{
+    0%{transform: scale(0.9);opacity: 0;}
+    100%{transform: scale(1);opacity: 1;}
+}
+.lecture-heading{
+    float: left;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 1.3em 2%;
+    width: 96%;
+    margin: 0em;
+    background-color: #fff;
+}
+
+.modal-content::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    background-color: #262b3f;
+}
+
+.modal-content::-webkit-scrollbar
+{
+	transition: all 200ms;
+    width: 5px;
+    background-color: #0000ff;
+}
+
+.modal-content::-webkit-scrollbar-thumb
+{
+    border-radius: 200px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
+/* project content scroll bar */
+.project-content::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.1);
+    border-radius: 0px;
+    background-color: #fff;
+}
+
+.project-content::-webkit-scrollbar
+{
+	transition: all 200ms;
+    width: 2px;
+    background-color: #fff;
+}
+
+.project-content::-webkit-scrollbar-thumb
+{
+    border-radius: 200px;
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+    background-color: #3a3a3a;
+}
+
+/* project list scroll bar */
+.project-list::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.project-list::-webkit-scrollbar
+{
+	transition: all 200ms;
+    width: 0px;
+    background-color: #0000ff00;
+}
+
+.project-list::-webkit-scrollbar-thumb
+{
+    border-radius: 200px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    background-color: #3a3a3a00;
+}
+/* The Close Button */
+.close {
+    color: #0007;
+    float: right;
+    position: absolute;
+    right: 1%;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* tabs css starts here */
+/* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 0px solid #ccc;
+    float: left;
+    width: 100%;
+    padding: 0em;
+    background-color: #fff;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    border-radius: 0px;
+    transition: 0.3s;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #f6f6f650;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #f6f6f6;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 0px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0; transform: translateX(-5%);}
+    to {opacity: 1;transform: translateX(0%);}
+}
+
+/* tabs css ends here */
+.embaded-video{
+    float: left;
+    margin:2% 7.5%;
+}
+.resources-content{
+    float: left;
+    width: 100%;
+    margin-top: 5%;
+}
+.resource-link{
+    float: left;
+    width: 80%;
+    margin: 0.5em 10%;
+    padding: 1em 2%;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #dddfe2;
+}
+.resource-link:hover{
+    transition: all 150ms;
+    background-color: #4a578150;
+}
+.link-heading{
+    float: left;
+    width: 100%;
+    margin: 0.5em 0em;
+    font-weight: 400;
+}
+.link-content{
+    float: left;
+    width: 100%;
+    margin: 1em;
+}
+.underprocess{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin: 3em 0em;
+}
+.card{
+    background: #fff;
+    border:1px solid #dddfe2;
+    box-shadow: 0px 0px 0px #0000;
+    border-radius: 2px;
+}
+.project-container{
+    float: left;
+    width: 100%;
+}
+.project-back{
+    background-color: #fff;
+    float: left;
+    display: flex;
+}
+
+
+/* project page css starts here */
+.project-head{
+    float: left;
+    padding: 0em 4%;
+    width: 92%;
+}
+.project-heading{
+    float: left;
+    width: 85%;
+    
+}
+.time-left{
+    float: left;
+    width: 15%;
+    font-weight: 500;
+    text-align: right;
+}
+.project-discription{
+    float: left;
+    width: 96%;
+    text-align: justify;
+    padding: 0em 2%;
+    line-height: 1.8;
+    color: #3d3d3d;
+    font-weight: 400;
+}
+.checkpoints{
+    float: left;
+    font-weight: 500;
+    color: #559900;
+    padding: 0.5em 2em;
+    margin: 0.5em 10%;
+}
+.input-link{
+    float: left;
+    width: 100%;
+    margin: 1em 0% 
+        3em;
+}
+.input-fields{
+    padding: 0.8em 0em;
+}
+.input-text{
+    float: left;
+    width: 77%;
+    padding-left: 1%;
+    margin-right:1%;
+    border: 1px solid #0004;
+    background-color: transparent;
+    border-radius: 2px;
+}
+.input-submit-button{
+    float: left;
+    width: 20%;
+    background-color: cornflowerblue;
+    color: #3a3a3a;
+    box-shadow: none;
+    border: 0px;
+    border-radius: 2px;
+    
+}
+.input-submit-button:hover{
+    transition: all 150ms;
+    box-shadow: 0px 10px 15px -3px #0004;
+}
+.repo-link{
+    float: left;
+    width: 100%;
+    text-decoration: none;
+}
+
+.critical-font{
+    color: #ff8e4f;
+}
+
+/* profile page css goes here */
+.profile-head{
+    float: left;
+    width: 100%;
+    padding: 3% 5%;
+}
+.profile-img-card{
+    float: left;
+    width: 15%;
+}
+.profile-img-sec{
+    float: left;
+    width: 100%;
+}
+.basic-discription{
+    float: left;
+    width: 60%;
+    padding: 0% 5%;
+}
+.discription-text{
+    float: left;
+    width: 100%;
+    margin: 0.5em 0em;
+}
+.extended-discription{
+    float: left;
+    width: 100%;
+    padding: 3% 5%;
+    padding-bottom: 1em;
+}
+.extended-discription > .subscription-info{
+    float: left;
+    width: 90%;
+}
+.tittle-text{
+    margin-right: 3em;
+}
+.discription-head{
+    float: left;
+    width: 20%;
+    margin: 0.5em 0em;
+}
+.discription-head > .fa , .discription-text > .fa{
+    margin-right: 0.5em;
+}
+.discription-detail{
+    float: left;
+    width: 70%;
+    margin: 0.5em 0em;
+}
+
+
+
+
+/* project page css from version 1.3.0 */
+.project-back{
+    background: #fff;
+    display: flex;
+    margin-bottom: 0%;
+    min-height: 90vh;
+}
+.project-list{
+    float: left;
+    width: 30%;
+    border-right: 0px solid #0002;
+    height: 100%;
+    overflow: scroll;
+}
+.project-content{
+    float: left;
+    width: 60%;
+    padding: 2% 5%;
+    background: #f6f6f6;
+}
+.project-list-iteam{
+    float: left;
+    padding: 0.7em 3%;
+    width: 94%;
+    border-bottom: 1px solid #f6f6f6;
+}
+.project-list-iteam:hover{
+    background-color: #4a578150;
+    cursor: pointer;
+}
+.project-list-iteam >h4 {
+    float: left;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    height: 1.2em;
+    margin: 1em 0em 0em;
+    overflow-y: hidden;
+}
+.status{
+    float: left;
+    width: 100%;
+    margin: 0.5em 0em;
+    color: #3a3a3a;
+    font-size: 0.9em;
+}
+.status > span {
+    padding: 0.3em 0.5em;
+    margin-right: 1em;
+    min-width: 7em;
+    float: left;
+}
+/* status color css here */
+.status-indicator{
+    font-size: 1em;
+    border-radius: 2px;
+    color: #fff;
+}
+.status-indicator:before{
+    font-family: FontAwesome;
+    content: "\f14a ";
+}
+.open{
+    background-color: #34db87;
+}
+.open:before{
+    font-family: FontAwesome;
+    content: "\f192"
+}
+.open:after{
+    content: " ACTIVE"
+}
+.missed{
+    background-color: #f00;
+}
+.missed:before{
+    font-family: FontAwesome;
+    content: "\f057"
+}
+.missed:after{
+    content: " MISSED"
+}
+.submitted{
+    background-color: cornflowerblue;
+}
+.submitted:before{
+    font-family: FontAwesome;
+    content: "\f0c8"
+}
+.submitted:after{
+    content: " SUBMITTED"
+}
+.late{
+    background-color: #ffbc00;
+}
+.late:before{
+    font-family: FontAwesome;
+    content: "\f071"
+}
+.late:after{
+    content: " LATE"
+}
+
+.project-head{
+    float: left;
+    width: 100%;
+    padding: 0%;
+}
+.project-head > h4{
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    font-weight: 400;
+    margin: 1em 0%;
+}
+.project-head > p{
+    float: left;
+    width: 100%;
+    margin: 0.5em 0%;
+}
+.project-disc{
+    float: left;
+    width: 100%;
+}
+.project-disc > p{
+    float: left;
+    width: 90%;
+    margin: 2em 5%;
+    line-height: 1.5;
+}
+.checkpoint{
+    margin: 2% 0em;
+    float: left;
+}
+
+/* accordion css */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: transparent;
+    color: #3a3a3a;
+    cursor: pointer;
+    padding: 18px 2%;
+    width: 98%;
+    margin: 2em 0%;
+    font-weight: 600;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    float: left;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+    background-color: #f6f6f6;
+}
+.accordion:hover{
+    background-color: #0001;
+}
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    float: left;
+    width: 90%;
+    margin: 0% 3% 5%;
+    padding: 0 2%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel > table {
+    width: 100%;
+    float: left;
+}
+.panel > table > tr {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #0002;
+}
+td {
+    text-align: center;
+}
+td:nth-child(1) {
+    text-align: left;
+}
+th {
+    padding: 1em 0em;
+    font-weight: 400;
+}
+th:nth-child(1) {
+    text-align: left;
+}
+
+
+.link-input{
+    float: left;
+    width: 100%;
+}
+.link-input > p{
+    float: left;
+    font-size: 0.9em;
+    width: 100%;
+    padding: 0% 0%;
+    color: #000;
+}
+.hide{
+    display: none;
+}
+.repo-link-review{
+    float: left;
+    color: #28a6ff;
+    width: 100%;
+    margin: 2% 0%;
+}
+
+/* summary css goes here */
+
+.summry-content{
+    float: left;
+    width: 96%;
+    padding: 3% 2%;
+}
+.summry-content > p{
+    float: left;
+    width: 33%;
+    text-align: center;
+    text-decoration: none;
+    color: #3a3a3a;
+    font-size: 1.2em;
+    padding: 1% 0%;
+    border-left: 1px solid #0002;
+}
+.summry-content > p:nth-child(4){
+    border-left: 0px solid #0002;
+}
+.summary-chart{
+    width: 33%;
+    background: transparent;
+    float: left
+}
+.report-button{
+    float: right;
+    text-align: center;
+    padding: 1em 2em;
+    background-color: #4a578110;
+    text-decoration: none;
+    margin: 1em;
+}
+.report-button:hover{
+    transition: all 150ms;
+    background-color: #4a578160;
+}
+
+/* lesson list css starts here */
+
+.lesson-list > .structure-list {
+    border-bottom: 0px solid #fff;
+    padding: 0em 3%;
+}
+.lesson-list > .structure-list:hover {
+    background-color: transparent;
+    cursor: default;
+}
+.lesson-list > .structure-list:before{
+  content: '';
+  float: left;
+  width: 3px;
+  height: 60px;
+    margin-top: -23px;
+  background-color: #c8c8c8;
+  margin-left: 0px;
+  transform: translateX(0.6em);
+  z-index: -9999;
+}
+.lesson-list > .structure-list:nth-child(1):before{
+  content: '';
+  float: left;
+  width: 3px;
+  height: 30px;
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: #0000;
+  transform: translateX(0.6em);
+  z-index: -9999;
+}
+.lesson-list > .structure-list > .attand-mark {
+    padding: 0em;
+    width: 1em;
+    height: 1em;
+    margin-top: 1.5em;
+    color: #0000;
+    border-radius: 500px;
+    z-index: 99999999999999999;
+    background-color: #c8c8c8;
+}
+
+
+.lesson-list > .done:before , .lesson-list > .done > .attand-mark {
+  background-color: #4a5781;
+}
+/* lesson list css ends here */
+
